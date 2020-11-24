@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/normal.woff") format("woff");
+  font-weight: 400px;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/Italic.woff2") format("woff");
+  font-weight: 400px;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/final_project/fonts/bold2.woff") format("woff");
+  font-weight: 700px;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: MyWebFont;
+}
+
+section {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots-conteiner {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  bottom: -65px;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/*# sourceMappingURL=slider.css.map */
